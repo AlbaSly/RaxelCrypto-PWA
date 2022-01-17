@@ -1,5 +1,16 @@
 const cacheName = 'RaxelCrypto_v4';
 
+const files = [
+    '/',
+    '/manifest.json',
+    '/index.html',
+    '/css/app.css',
+    '/css/normalize.css',
+    '/css/skeleton.css',
+    '/js/sw-loader.js',
+    '/js/app.js'
+]
+
 self.addEventListener('install', ev => {
     console.log('Service Worker instalado correctamente', ev);
 
@@ -7,16 +18,7 @@ self.addEventListener('install', ev => {
         caches.open(cacheName).then(cache => {
             console.log('Cacheando...', cache);
 
-            cache.addAll([
-                './',
-                './manifest.json',
-                './index.html',
-                './css/app.css',
-                './css/normalize.css',
-                './css/skeleton.css',
-                './js/sw-loader.js',
-                './js/app.js',
-            ]);
+            cache.addAll(files);
         }).catch(console.error)
     );
 });
