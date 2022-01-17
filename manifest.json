@@ -1,0 +1,52 @@
+{
+    "name": "Cotizador de Criptomonedas",
+    "short_name": "RaxelCrypto",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#0D2235",
+    "theme_color": "#0D2235",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "img/icons/72px.png",
+            "type": "image/png",
+            "sizes": "72x72"
+        },
+        {
+            "src": "img/icons/120px.png",
+            "type": "image/png",
+            "sizes": "120x120"
+        },
+        {
+            "src": "img/icons/128px.png",
+            "type": "image/png",
+            "sizes": "128x128"
+        },
+        {
+            "src": "img/icons/144px.png",
+            "type": "image/png",
+            "sizes": "144x144",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "img/icons/152px.png",
+            "type": "image/png",
+            "sizes": "152x152"
+        },
+        {
+            "src": "img/icons/196px.png",
+            "type": "image/png",
+            "sizes": "196x196"
+        },
+        {
+            "src": "img/icons/256px.png",
+            "type": "image/png",
+            "sizes": "256x256"
+        },
+        {
+            "src": "img/icons/512px.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}

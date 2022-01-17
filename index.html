@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RaxelCrypto - Inicio</title>
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/app.css">
+    
+    <link rel="apple-touch-icon" href="img/icons/72px.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="black">
+</head>
+<body>
+    <header>
+        <h2>RaxelCrypto</h2>
+        <p>Tu cotizador de criptomonedas</p>
+    </header>  
+    <div class="container">
+        <div class="row">
+            <div class="one-half column crypto-img">
+                <img src="img/cryptomonedas.png" alt="Cryptos">
+            </div>
+            <div class="one-half column">
+                <form id="form">
+                    <div class="row">
+                        <label>Elige tu Moneda</label>
+                        <select 
+                            class="u-full-width"
+                            name="globalCurrency" 
+                            id="globalCurrency">
+                            <option value="" disabled selected>Monedas...</option>                 
+                        </select>
+                    </div>
+                    <div class="row">
+                        <label>Elige la Criptomoneda</label>
+                        <select 
+                            class="u-full-width"
+                            name="cryptoCurrency" 
+                            id="cryptoCurrency">
+                            <option value="" disabled selected>Criptomonedas...</option>
+                        </select>
+                    </div>
+
+                    <input type="submit" class="button-primary u-full-width" value="Cotizar">
+                
+                    <div id="result" class="result"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/sw-loader.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
