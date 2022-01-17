@@ -1,4 +1,4 @@
-const cacheName = 'RaxelCrypto_v7';
+const cacheName = 'RaxelCrypto_v7.1';
 
 const files = [
     '/',
