@@ -1,4 +1,4 @@
-const cacheName = 'RaxelCrypto_v6_fixed';
+const cacheName = 'RaxelCrypto_v7';
 
 const files = [
     '/',
@@ -8,7 +8,8 @@ const files = [
     '/css/normalize.css',
     '/css/skeleton.css',
     '/js/sw-loader.js',
-    '/js/app.js'
+    '/js/app.js',
+    '/img/cryptomonedas.png'
 ]
 
 self.addEventListener('install', ev => {
