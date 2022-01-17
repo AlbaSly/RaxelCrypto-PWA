@@ -1,7 +1,7 @@
 {
     "name": "Cotizador de Criptomonedas",
     "short_name": "RaxelCrypto",
-    "start_url": "./index.html",
+    "start_url": "/index.html",
     "display": "standalone",
     "background_color": "#0D2235",
     "theme_color": "#0D2235",
