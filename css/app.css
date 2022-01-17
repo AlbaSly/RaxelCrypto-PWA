@@ -70,6 +70,7 @@ input[type="submit"]{
 }
 p.precio{
     font-size: 30px!important;
+    text-align: center;
 }
 
 @media (min-width:480px) {
