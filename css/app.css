@@ -192,3 +192,8 @@ header p {
     position: relative;
     animation: fade-in-out 8s infinite, float-up 4s infinite;
 }
+
+header h2 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
