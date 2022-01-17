@@ -102,7 +102,7 @@ class UI {
 
         const price_p = document.createElement('p');
         price_p.classList.add('precio');
-        price_p.innerHTML = `El Precio es: <span>${PRICE}</span>`;
+        price_p.innerHTML = `<span>${PRICE}</span>`;
 
         const highday_p = document.createElement('p');
         highday_p.innerHTML = `Precio más alto del día: <span>${HIGHDAY}</span>`;
