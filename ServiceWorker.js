@@ -1,4 +1,4 @@
-const cacheName = 'RaxelCrypto_v5_fix';
+const cacheName = 'RaxelCrypto_v6_fixed';
 
 const files = [
     '/',
@@ -37,8 +37,9 @@ self.addEventListener('activate', ev => {
 self.addEventListener('fetch', ev => {
     console.log('Fetching...', ev);
 
-    ev.respondWith(async()=> {
-        const cachedResponse = await caches.match(ev.request);
-        return cachedResponse;
-    })
+    ev.respondWith(
+        caches.match(ev.request).then(cachedResponse => {
+            return cachedResponse || fetch(ev.request);
+        })
+    )
 });
