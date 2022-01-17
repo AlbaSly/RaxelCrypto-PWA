@@ -89,12 +89,12 @@ class UI {
         
         const {cryptoCurrency, globalCurrency} = currencyObj;
         
+        this.clearResult();
+
         if (data.Response === 'Error') {
             this.showAlert(`${cryptoCurrency}-${globalCurrency} Inexistente en el exchange`);
             return;
         }
-        
-        this.clearResult();
         
         const currencyInfo = data.DISPLAY[cryptoCurrency][globalCurrency];
         
